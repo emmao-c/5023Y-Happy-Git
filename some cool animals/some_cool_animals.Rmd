@@ -1,18 +1,21 @@
 ---
 title: "Some cool animal facts"
-author: "Philip Leftwich"
+author: "Emma O'Connor"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-
+library(usethis)
+library(gitcreds)
 
 ##### A note on this project:
 
 ## This project developed from Allison Horst's very cool intro to GitHub. 
 
 ```
+
+   
 
 
 ### Cool animal fun facts {.tabset .tabset-fade}
@@ -57,7 +60,20 @@ knitr::opts_chunk$set(echo = TRUE)
 - They are not endangered, just very elusive
 - Closely related to raccoons
 
-###
+
+#### Grogu
+![Photo: Baby Yoda ](img/Grogu.jpg)
+
+##### Grogu fun facts: 
+- Also known as "The Child"
+
+- likes unfertilised frog eggs & control knobs
+
+- strong with the force
+
 
 ----------
 **Disclaimer:** This document is only for R Markdown & GitHub teaching purposes
+
+usethis::use_git_config(user.name = "emmao-c", user.email = "zzq21wcu@uea.ac.uk")
+gitcreds::gitcreds_set(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)
